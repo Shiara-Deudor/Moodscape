@@ -1,2 +1,1 @@
-# Moodscape
- 
+# moodscape-app

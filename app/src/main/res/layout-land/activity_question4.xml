@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+
+            <TextView
+                android:id="@+id/question4_tagline1"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/sourcesanspro_regular"
+                android:text="on a scale of 1-10"
+                android:textColor="#4A5759"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/question4_how"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="How much do you worry\nabout things at the\nmoment?"
+                android:textColor="#4A5759"
+                android:textSize="23sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/question4_tagline1" />
+
+            <TextView
+                android:id="@+id/question4_tagline2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="156dp"
+                android:fontFamily="@font/sourcesanspro_regular"
+                android:text="1 being nonchalant and 10 being distraught"
+                android:textColor="#4A5759"
+                android:textSize="18sp"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/question4_how" />
+
+
+            <TextView
+                android:id="@+id/question4_rate"
+                android:layout_width="25dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/question4_tagline2" />
+
+            <SeekBar
+                android:id="@+id/question4_seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:background="@drawable/round_btn4"
+                android:max="10"
+                android:min="1"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/question4_rate"
+                app:tickMarkTint="#000000" />
+
+            <LinearLayout
+                android:id="@+id/q4Linear"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="140dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/question4_seekBar">
+
+                <Button
+                    android:id="@+id/backbtn4"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_btn3"
+                    android:elevation="5dp"
+                    android:fontFamily="@font/sourcesanspro_bold"
+                    android:stateListAnimator="@null"
+                    android:text="Back"
+                    android:textAllCaps="false"
+                    android:textSize="24sp"
+                    app:backgroundTint="@color/canary" />
+
+
+                <Button
+                    android:id="@+id/nextbtn4"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/round_btn3"
+                    android:elevation="5dp"
+                    android:fontFamily="@font/sourcesanspro_bold"
+                    android:stateListAnimator="@null"
+                    android:text="Next"
+                    android:textAllCaps="false"
+                    android:textSize="24sp"
+                    app:backgroundTint="@color/dark_pink" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/q4Linear"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
